@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Navigation / Stepper / Elements / Step</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Navigation-/-Stepper-/-Elements-/-Step" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Naviagation-/-Stepper-/-Elements-/-Step">
+            <circle id="Oval" fill="#BABDC3" cx="10" cy="10" r="10"></circle>
+            <text id="Number" font-family="Europa-Bold, Europa" font-size="14" font-weight="bold" fill="#FFFFFF">
+                <tspan x="6.892" y="15">1</tspan>
+            </text>
+        </g>
+    </g>
+</svg>

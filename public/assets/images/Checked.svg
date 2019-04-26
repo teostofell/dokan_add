@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="18px" height="18px" viewBox="0 0 18 18" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Selection Control / Radio / Checked</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Selection-Control-/-Radio-/-Checked" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <circle id="Icon" stroke="#1EAED8" stroke-width="1.3" cx="9" cy="9" r="8.35"></circle>
+        <circle id="Checked" fill="#28C5F0" cx="9" cy="9" r="4"></circle>
+    </g>
+</svg>

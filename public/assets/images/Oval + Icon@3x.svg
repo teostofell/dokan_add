@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="48px" height="48px" viewBox="0 0 48 48" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Buttons / Round / Oval + Icon</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <circle id="path-1" cx="24" cy="24" r="24"></circle>
+        <filter x="-13.5%" y="-11.5%" width="127.1%" height="127.1%" filterUnits="objectBoundingBox" id="filter-2">
+            <feOffset dx="0" dy="1" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0   0 0 0 0 0   0 0 0 0 0  0 0 0 0.16 0" type="matrix" in="shadowBlurOuter1"></feColorMatrix>
+        </filter>
+    </defs>
+    <g id="Buttons-/-Round-/-Oval-+-Icon" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <g id="Round">
+                <use fill="black" fill-opacity="1" filter="url(#filter-2)" xlink:href="#path-1"></use>
+                <use fill="#FFFFFF" fill-rule="evenodd" xlink:href="#path-1"></use>
+            </g>
+            <g id="Icons-/-Arrows-Right-/-Navy" transform="translate(13.000000, 12.000000)">
+                <g>
+                    <rect id="Bounds" x="0" y="0" width="24" height="24"></rect>
+                    <path d="M18.6259577,11.0387862 L8.17836331,0.381231314 C7.67974987,-0.127077105 6.87201525,-0.127077105 6.37372082,0.381231314 C5.87542639,0.889865153 5.87542639,1.71383245 6.37372082,2.22214087 L15.9223436,11.9626579 L6.37053071,21.7816015 C5.87415035,22.291537 5.87734046,23.1161551 6.37722994,23.6221856 C6.62605814,23.8740619 6.95112985,24 7.27620157,24 C7.60446339,24 7.9324062,23.8714585 8.18187242,23.6150263 L18.6294668,12.8761161 C19.1248902,12.3674823 19.1232951,11.5457929 18.6259577,11.0387862 Z" id="Icon" fill="#191E28"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
