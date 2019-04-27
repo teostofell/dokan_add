@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Multiple-sizes / Normal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons-/-Multiple-sizes-/-Normal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Bounds" x="0" y="0" width="24" height="24"></rect>
+            <path d="M1,8 L12,1 L23,8 L12,15 L1,8 Z M23,10 L23,12 L12,19 L1,12 L1,10 L12,17 L23,10 Z M23,14 L23,16 L12,23 L1,16 L1,14 L12,21 L23,14 Z" id="Icon" fill="#BABDC3"></path>
+        </g>
+    </g>
+</svg>

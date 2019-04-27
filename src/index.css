@@ -1,4 +1,44 @@
+@import url("https://p.typekit.net/p.css?s=1&k=oye6gcj&ht=tk&f=15528.15529.15530.17251.17252.17253&a=918083&app=typekit&e=css");
 /* SG styles*/
+@font-face {
+  font-family: "europa";
+  src: url("https://use.typekit.net/af/f3ba4f/00000000000000003b9b12fa/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff2"), url("https://use.typekit.net/af/f3ba4f/00000000000000003b9b12fa/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("woff"), url("https://use.typekit.net/af/f3ba4f/00000000000000003b9b12fa/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n7&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 700;
+}
+@font-face {
+  font-family: "europa";
+  src: url("https://use.typekit.net/af/3e64fb/00000000000000003b9b12fe/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff2"), url("https://use.typekit.net/af/3e64fb/00000000000000003b9b12fe/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("woff"), url("https://use.typekit.net/af/3e64fb/00000000000000003b9b12fe/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n3&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "europa";
+  src: url("https://use.typekit.net/af/4eabcf/00000000000000003b9b12fd/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff2"), url("https://use.typekit.net/af/4eabcf/00000000000000003b9b12fd/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("woff"), url("https://use.typekit.net/af/4eabcf/00000000000000003b9b12fd/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=n4&v=3") format("opentype");
+  font-style: normal;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "europa";
+  src: url("https://use.typekit.net/af/a386b3/00000000000000003b9b12f9/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff2"), url("https://use.typekit.net/af/a386b3/00000000000000003b9b12f9/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("woff"), url("https://use.typekit.net/af/a386b3/00000000000000003b9b12f9/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i3&v=3") format("opentype");
+  font-style: italic;
+  font-weight: 300;
+}
+@font-face {
+  font-family: "europa";
+  src: url("https://use.typekit.net/af/e32ad9/00000000000000003b9b12fb/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff2"), url("https://use.typekit.net/af/e32ad9/00000000000000003b9b12fb/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("woff"), url("https://use.typekit.net/af/e32ad9/00000000000000003b9b12fb/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i4&v=3") format("opentype");
+  font-style: italic;
+  font-weight: 400;
+}
+@font-face {
+  font-family: "europa";
+  src: url("https://use.typekit.net/af/a6fa4a/00000000000000003b9b12fc/27/l?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff2"), url("https://use.typekit.net/af/a6fa4a/00000000000000003b9b12fc/27/d?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("woff"), url("https://use.typekit.net/af/a6fa4a/00000000000000003b9b12fc/27/a?primer=7cdcb44be4a7db8877ffa5c0007b8dd865b3bbc383831fe2ea177f62257a9191&fvd=i7&v=3") format("opentype");
+  font-style: italic;
+  font-weight: 700;
+}
+.tk-europa {
+  font-family: "europa", sans-serif;
+}
 /*User account styles*/
 header {
   border-bottom: 1px solid #D0D2D6;
@@ -329,7 +369,7 @@ header {
   display: flex;
   align-items: center;
   justify-content: center;
-  background: url(assets/images/bg_footer_how_does_it_works.jpg);
+  background: url(/public/assets/images/bg_footer_how_does_it_works.jpg);
   background-size: cover;
 }
 .sneaker_revolution div {
@@ -684,10 +724,6 @@ header {
   margin-bottom: 6px;
   display: inline-block !important;
 }
-.single-product .product #custom_show_variations tr td:nth-child(2n) div.custom_variation_selector {
-  background-color: #28c5f0 !important;
-  color: #164d65 !important;
-}
 .single-product .product .avatar {
   display: flex;
   align-items: flex-start;
@@ -805,13 +841,13 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url('assets/images/arrow_dropdown.svg');
+  background-image: url('/public/assets/images/arrow_dropdown.svg');
   background-size: 20px;
   background-position: right 10px top 10px;
   background-repeat: no-repeat;
 }
 .sg_completion_page .form_group .checked {
-  background-image: url('assets/images/check.svg');
+  background-image: url('/public/assets/images/check.svg');
   background-size: 24px;
   background-position: right 10px top 10px;
   background-repeat: no-repeat;
@@ -897,10 +933,11 @@ header {
   border-radius: 50%;
   color: #fff;
   line-height: 20px;
-  font-size: 14px;
-  font-weight: bold;
+  padding-right: 0px;
+  font-size: 12px;
   text-align: center;
   margin: 0 auto 4px auto;
+  font-weight: 500;
 }
 .sg_completion_page .sg_header_social,
 .sg_completion_page .sg_how_does_it_work {
@@ -1200,13 +1237,13 @@ header {
   -webkit-appearance: none;
   -moz-appearance: none;
   appearance: none;
-  background-image: url('assets/images/arrow_dropdown.svg');
+  background-image: url('/public/assets/images/arrow_dropdown.svg');
   background-size: 20px;
   background-position: right 10px top 10px;
   background-repeat: no-repeat;
 }
 .sg_listing_sneakers_new_page .form_group .checked {
-  background-image: url('assets/images/check.svg');
+  background-image: url('/public/assets/images/check.svg');
   background-size: 24px;
   background-position: right 10px top 10px;
   background-repeat: no-repeat;
@@ -1224,6 +1261,139 @@ header {
   color: #191e28;
   border: 1px solid #d0d2d6;
   border-radius: 3px;
+}
+.sg_listing_sneakers_new_page .price_list_box_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single {
+  position: relative;
+  width: 47%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single h3 {
+  font-size: 15px;
+  color: #191E28;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box {
+  max-width: 210px;
+  width: 100%;
+  position: relative;
+  margin-right: 16px;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 999;
+  height: 45px;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box p {
+  height: 100%;
+  padding-left: 40px;
+  height: 45px;
+  margin: 0;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box p .radio_label {
+  margin: 0px;
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #D0D2D6;
+  border-radius: 3px;
+  display: inline-flex;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box p .radio_label span {
+  background: #D0D2D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40px;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box p .radio_label span i {
+  color: #4c4a4a;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box p .radio_label b {
+  padding: 10px 0px 10px 20px;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box p .radio_label i {
+  color: #000;
+  font-size: 14px;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box input[type="radio"] + p {
+  color: #000;
+  background-image: url(/public/assets/images/Enabled.svg);
+  background-size: 20px;
+  background-position: left 10px top 13px;
+  background-repeat: no-repeat;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_radio_box input[type="radio"]:checked + p {
+  color: #000;
+  background-image: url(/public/assets/images/Checked.svg);
+  background-size: 20px;
+  background-position: left 10px top 13px;
+  background-repeat: no-repeat;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_box {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  width: 43px;
+  border: 1px solid #D0D2D6;
+  justify-content: center;
+  border-radius: 3px;
+  position: relative;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_box p.dop_money {
+  margin: 0;
+  font-size: 16px;
+  color: #191E28;
+  letter-spacing: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_box .delete_dop_money {
+  position: absolute;
+  cursor: pointer;
+  font-size: 19px;
+  color: #d80303;
+  right: -35px;
+  top: 11px;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_box.text {
+  width: 100px;
+  font-size: 15px;
+  color: rgba(25, 30, 40, 0.64);
+  letter-spacing: 0;
+  border: none;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single .input_box.text p {
+  border: none;
+  margin: 0;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single.enabled .radio_label b {
+  display: none;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single.enabled .input_box {
+  display: none;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single.enabled .radio_label {
+  background: #ededed;
+}
+.sg_listing_sneakers_new_page .price_list_box_row .price_list_single.enabled .radio_label i {
+  color: #888888!important;
 }
 .sg_listing_sneakers_new_page .form_group.names {
   display: flex;
@@ -1295,7 +1465,7 @@ header {
   height: 100%;
   border-radius: 3px;
   border: 1px solid #D0D2D6;
-  background-image: url('assets/images/Enabled.svg');
+  background-image: url('/public/assets/images/Enabled.svg');
   background-size: 20px;
   background-position: right 10px top 13px;
   background-repeat: no-repeat;
@@ -1305,7 +1475,7 @@ header {
   color: #000;
   border-color: #1EAED8;
   background-color: rgba(30, 174, 216, 0.04);
-  background-image: url('assets/images/Checked.svg');
+  background-image: url('/public/assets/images/Checked.svg');
   background-size: 20px;
   background-position: right 10px top 13px;
   background-repeat: no-repeat;
@@ -1419,7 +1589,7 @@ header {
   line-height: 26px;
 }
 .sg_listing_sneakers_new_page .new_skeaker_step3 .product_about_area .image h3.multiply_sizes {
-  background-image: url('assets/images/multiply_sizes.svg');
+  background-image: url('/public/assets/images/multiply_sizes.svg');
   background-size: 24px;
   background-position: right 7px top 0px;
   background-repeat: no-repeat;
@@ -1488,10 +1658,578 @@ header {
   opacity: 0;
 }
 .sg_listing_sneakers_new_page .new_skeaker_step3 .product_about_area .product_params .terms_conditions input[type="checkbox"]:checked + label {
-  background-image: url('assets/images/Checked_checkbox.svg');
+  background-image: url('/public/assets/images/Checked_checkbox.svg');
   background-size: 20px;
   background-position: left 0px top 0px;
   background-repeat: no-repeat;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 {
+  max-width: 770px;
+  width: 100%;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .checkbox_group h3 {
+  font-size: 16px;
+  color: #191E28;
+  font-weight: bold;
+  padding-bottom: 6px;
+  margin-top: 56px;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #d0d2d6;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .checkbox_group h3 span {
+  color: #969AA0;
+  font-weight: 100;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .checkbox_group div {
+  display: flex;
+  justify-content: flex-start;
+  margin-bottom: 24px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .checkbox_group div p {
+  padding-right: 40px;
+  position: relative;
+  cursor: pointer;
+  margin: 0;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .checkbox_group div p label {
+  font-size: 14px;
+  color: #191e28;
+  letter-spacing: 0;
+  line-height: 16px;
+  width: 100%;
+  padding-left: 30px;
+  height: 22px;
+  cursor: pointer;
+  padding-top: 3px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .checkbox_group div p input {
+  height: 20px;
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  opacity: 0;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .checkbox_group div p input[type="checkbox"]:checked + label {
+  background-image: url('/public/assets/images/Checked_checkbox.svg');
+  background-size: 20px;
+  background-position: left 0px top 0px;
+  background-repeat: no-repeat;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion {
+  margin-bottom: 24px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list {
+  border: 1px solid #E6E8EC;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_header {
+  background: #F0F1F3;
+  font-size: 16px;
+  color: rgba(25, 30, 40, 0.64);
+  letter-spacing: 0;
+  padding: 10px 0 10px 24px;
+  border-bottom: 1px solid #E6E8EC;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box {
+  background: #FFFFFF;
+  padding: 24px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single {
+  position: relative;
+  width: 47%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: flex-end;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single h3 {
+  font-size: 15px;
+  color: #191E28;
+  letter-spacing: 0;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box {
+  max-width: 210px;
+  width: 100%;
+  position: relative;
+  margin-right: 16px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box input {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  cursor: pointer;
+  z-index: 999;
+  height: 45px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box p {
+  height: 100%;
+  padding-left: 40px;
+  height: 45px;
+  margin: 0;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box p .radio_label {
+  margin: 0px;
+  position: relative;
+  height: 100%;
+  display: inline-block;
+  width: 100%;
+  border: 1px solid #D0D2D6;
+  border-radius: 3px;
+  display: inline-flex;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box p .radio_label span {
+  background: #D0D2D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box p .radio_label span i {
+  color: #4c4a4a;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box p .radio_label b {
+  padding: 10px 0px 10px 20px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box p .radio_label i {
+  color: #000;
+  font-size: 14px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box input[type="radio"] + p {
+  color: #000;
+  background-image: url(/public/assets/images/Enabled.svg);
+  background-size: 20px;
+  background-position: left 10px top 13px;
+  background-repeat: no-repeat;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_radio_box input[type="radio"]:checked + p {
+  color: #000;
+  background-image: url(/public/assets/images/Checked.svg);
+  background-size: 20px;
+  background-position: left 10px top 13px;
+  background-repeat: no-repeat;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_box {
+  height: 45px;
+  display: flex;
+  align-items: center;
+  width: 43px;
+  border: 1px solid #D0D2D6;
+  justify-content: center;
+  border-radius: 3px;
+  position: relative;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_box p.dop_money {
+  margin: 0;
+  font-size: 16px;
+  color: #191E28;
+  letter-spacing: 0;
+  font-weight: bold;
+  text-align: center;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_box .delete_dop_money {
+  position: absolute;
+  cursor: pointer;
+  font-size: 19px;
+  color: #d80303;
+  right: -35px;
+  top: 11px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_box.text {
+  width: 100px;
+  font-size: 15px;
+  color: rgba(25, 30, 40, 0.64);
+  letter-spacing: 0;
+  border: none;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single .input_box.text p {
+  border: none;
+  margin: 0;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single.enabled .radio_label b {
+  display: none;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single.enabled .input_box {
+  display: none;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single.enabled .radio_label {
+  background: #ededed;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .price_list .price_list_box .price_list_box_row .price_list_single.enabled .radio_label i {
+  color: #888888!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .shipping_settings .form_group label {
+  font-size: 16px;
+  color: #191E28;
+  letter-spacing: 0;
+  font-weight: 100;
+  display: block;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .shipping_settings .form_group select {
+  max-width: 246px;
+  font-size: 16px;
+  color: #969AA0;
+  letter-spacing: 0;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .shipping_settings p {
+  margin: 16px 0 0 0;
+  font-size: 14px;
+  color: #969AA0;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .save_setting .price_list_header {
+  display: flex;
+  justify-content: space-between;
+  font-weight: bold;
+  padding: 10px  24px;
+  align-items: center;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .save_setting .price_list_header p {
+  margin: 0;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .save_setting .price_list_header a {
+  font-size: 16px;
+  color: rgba(25, 30, 40, 0.32);
+  margin-left: 40px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step4 .shipping_method .price_by_rigion .save_setting .price_list_header a b {
+  color: #191E28;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .choosen_list {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .choosen_list .choosen_list_item {
+  border: 1px solid #D0D2D6;
+  border-radius: 3px;
+  position: relative;
+  margin-right: 17px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .choosen_list .choosen_list_item input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .choosen_list .choosen_list_item label {
+  width: 100%;
+  height: 100%;
+  padding: 10px 20px;
+  font-size: 16px;
+  color: rgba(25, 30, 40, 0.64);
+  letter-spacing: 0;
+  text-align: center;
+  margin: 0;
+  font-weight: bold;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .choosen_list .choosen_list_item input:checked + label {
+  background: #28C5F0;
+  color: #164D65;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .show_more_row {
+  justify-content: center!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .show_more {
+  font-size: 16px;
+  color: #164D65;
+  text-decoration: underline;
+  font-weight: bold;
+  display: inline-block;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .add_colabartation .addcoll {
+  width: 60px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  color: #164D65;
+  font-weight: bold;
+  cursor: pointer;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .add_colabartation .addcoll i {
+  color: #28C5F0;
+  padding-left: 5px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .item_details h3 {
+  margin-top: 0!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .item_details .many_blocks {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 8px;
+  margin-bottom: 0!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .item_details .many_blocks div {
+  min-width: 170px;
+  display: inline-block;
+  margin-right: 30px;
+  max-width: 270px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .item_details .many_blocks div label {
+  font-size: 15px;
+  color: #191E28;
+  letter-spacing: 0;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .item_details .many_blocks div:last-child {
+  margin-right: 0;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .color_list h3 {
+  margin-top: 0!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .color_list p {
+  margin: 0 0 30px 0;
+  font-size: 15px;
+  color: #191E28;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .color_list .color_list_box {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .color_list .color_list_box .color_list_item {
+  width: 36px;
+  height: 36px;
+  border-radius: 50%;
+  position: relative;
+  background: #000;
+  margin-right: 28px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .color_list .color_list_box .color_list_item input {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .color_list .color_list_box .color_list_item label {
+  font-size: 14px;
+  color: #fff;
+  width: 100%;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  display: none;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .color_list .color_list_box .color_list_item input:checked + label {
+  display: flex;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .description h3 {
+  margin-top: 0!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .description p {
+  margin: 0 0 24px 0;
+  font-size: 15px;
+  color: #191E28;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .description .form_group {
+  display: block!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .description .form_group textarea {
+  font-size: 16px;
+  color: #969AA0;
+  letter-spacing: 0;
+  min-height: 150px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .sizes_list_box h3 {
+  margin-top: 48px!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .sizes_list_box p {
+  font-size: 15px;
+  color: #191E28;
+  letter-spacing: 0;
+  line-height: 20px;
+  margin: 23px 0 18px 0;
+  font-weight: 500;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .sizes_list_box p span {
+  font-size: 15px;
+  color: #bbbbbb;
+  letter-spacing: 0;
+  line-height: 20px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .sizes_list_box .choosen_list_item {
+  margin-right: 20px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .sizes_list_box .choosen_list_item label {
+  padding: 6px 4px;
+  min-width: 37px;
+  font-size: 15px;
+  color: rgba(25, 30, 40, 0.64);
+  height: 35px;
+  box-sizing: border-box;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size h3,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes h3 {
+  margin-top: 0!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group {
+  margin-top: 8px!important;
+  align-items: center;
+  margin-bottom: 0!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .quantity_per_size_head,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .quantity_per_size_head {
+  padding: 0 4px;
+  min-width: 37px;
+  font-size: 15px;
+  background: #28C5F0;
+  color: #164D65;
+  font-weight: bold;
+  height: 35px;
+  line-height: 35px;
+  vertical-align: middle;
+  box-sizing: border-box;
+  margin-right: 62px;
+  margin-bottom: 0!important;
+  justify-content: center;
+  border: 1px solid #1EAED8;
+  border-radius: 2px;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .quantity_per_size_count_change,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .quantity_per_size_count_change {
+  margin-bottom: 0!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .quantity_per_size_count_change .size_plus,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .quantity_per_size_count_change .size_plus,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .quantity_per_size_count_change .size_minus,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .quantity_per_size_count_change .size_minus {
+  cursor: pointer;
+  margin: 0;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .quantity_per_size_count_change input,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .quantity_per_size_count_change input {
+  max-width: 60px;
+  border: none;
+  box-sizing: border-box;
+  height: 24px;
+  text-align: center;
+  font-size: 18px;
+  color: #164D65;
+  outline: none;
+  font-weight: bold;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .price_list_single,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .price_list_single {
+  width: 170px;
+  height: 45px;
+  border: 1px solid #D0D2D6;
+  border-radius: 3px;
+  margin-bottom: 0!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .price_list_single p,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .price_list_single p {
+  width: 100%;
+  height: 100%;
+  padding: 0 0 0 60px!important;
+  position: relative;
+  text-align: left;
+  line-height: 43px;
+  vertical-align: middle;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .price_list_single p label,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .price_list_single p label {
+  position: absolute;
+  left: 0;
+  top: 0;
+  background: #D0D2D6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 40px;
+  margin: 0;
+  padding: 0!important;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .price_list_single p label i,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .price_list_single p label i {
+  color: #4c4a4a;
+}
+.sg_listing_sneakers_new_page .new_skeaker_step5 .quantity_per_size .quantyti_per_size_row .form_group .price_list_single p b,
+.sg_listing_sneakers_new_page .new_skeaker_step5 .price_for_special_sizes .quantyti_per_size_row .form_group .price_list_single p b {
+  font-size: 16px;
+  color: #191E28;
+  letter-spacing: 0;
+}
+#sg-shadow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.56);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 998;
+}
+#sg-thank-notification {
+  max-width: 570px;
+  margin: 0 15px;
+  padding: 32px 70px;
+  background: #FFFFFF;
+  box-shadow: 0 1px 4px 0 rgba(0, 0, 0, 0.16);
+  border-radius: 3px;
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-flow: column;
+  z-index: 999;
+}
+#sg-thank-notification > img {
+  width: 47px;
+  margin-bottom: 32px;
+}
+#sg-thank-notification h3 {
+  font-size: 24px;
+  color: #191E28;
+  letter-spacing: 0;
+  text-align: center;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+}
+#sg-thank-notification p {
+  font-size: 16px;
+  color: #191E28;
+  letter-spacing: 0;
+  text-align: center;
+  line-height: 22px;
+  margin: 0 0 24px 0;
+}
+#sg-thank-notification a {
+  min-width: 135px;
+  background: #FF5F28;
+  color: #fff;
+  font-weight: bold;
+}
+#sg-thank-notification span {
+  position: absolute;
+  width: 24px;
+  right: 16px;
+  top: 16px;
+  cursor: pointer;
 }
 @media (max-width: 1100px) {
   .sg_premium_seller h1 {

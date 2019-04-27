@@ -18,6 +18,7 @@ export default class Wizard extends Component {
         this.state = {
             form: {
                 category: 'sneakers_new',
+                colors: [],
             },
             transitions: {
                 enterRight: `${transitions.animated} ${transitions.enterRight}`,
@@ -29,11 +30,31 @@ export default class Wizard extends Component {
         };
     }
 
-    updateForm = (key, value) => {
+    updateForm = (key, value, isCollection) => {
+        if(isCollection){
+            this.updateFormCollection(key, value);
+            return;
+        }
+
         const { form } = this.state;
 
         form[key] = value;
-        this.setState({ form });
+        this.setState({ form }, () => console.log(this.state.form));
+    }
+    
+    updateFormCollection = (key, value) => {
+        const { form } = this.state;
+        let collection = form[key];
+
+        if(collection.indexOf(value) !== -1) {
+            collection = collection.filter(item => item !== value);
+        } else {
+            collection.push(value);
+        }
+
+        form[key] = collection;
+
+        this.setState({ form }, () => console.log(this.state.form));
     }
 
     onStepChange = (stats) => {
@@ -42,19 +63,17 @@ export default class Wizard extends Component {
 
     render() {
         return (
-            <div className='container'>
-                <StepWizard
+            <StepWizard
                     onStepChange={this.onStepChange}
                     isHashEnabled
-                    transitions={this.state.transitions} // comment out this line to use default transitions
+                    transitions={this.state.transitions}
                     nav={<Nav />}
-                >
-                    <StartStep hashKey={'FirstStep'} form={this.state.form} update={this.updateForm} />
-                    <BasicInfoStep form={this.state.form} />
-                    <Progress />
-                    <Last hashKey={'TheEnd!'} />
-                </StepWizard>
-            </div>
+            >
+                <StartStep hashKey={'FirstStep'} form={this.state.form} update={this.updateForm} />
+                <BasicInfoStep hashKey={'SecondStep'} form={this.state.form} update={this.updateForm} />
+                <Progress />
+                <Last hashKey={'TheEnd!'} />
+            </StepWizard>
         );
     }
 }

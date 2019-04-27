@@ -1,5 +1,9 @@
 import React from 'react';
 import Stats from '../Components/Stats';
+import BrandSelector from '../Components/BrandSelector';
+import CollaborationSelector from '../Components/CollaborationSelector';
+import ItemDetailsSelector from '../Components/ItemDetailsSelector';
+import ColorwaySelector from '../Components/ColorwaySelector';
 
 class BasicInfoStep extends React.Component {
     validate = () => {
@@ -10,10 +14,17 @@ class BasicInfoStep extends React.Component {
 
     render() {
         return (
-            <div>
-                { this.props.form.firstname && <h3>Hey {this.props.form.firstname}! 👋</h3> }
-                I've added validation to the previous button.
-                <Stats step={2} {...this.props} previousStep={this.validate} />
+            <div className="container">
+                <div className="new_skeaker_step4 new_skeaker_step3 new_skeaker_step5">
+                    <h2 className="sg_title">So, what the item is like..?</h2>
+                    <div className='shipping_method'>
+                        <BrandSelector update={this.props.update}/>
+                        <CollaborationSelector update={this.props.update}/>
+                        <ItemDetailsSelector update={this.props.update}/>
+                        <ColorwaySelector update={this.props.update} />
+                        <Stats step={2} {...this.props} previousStep={this.validate} />
+                    </div>
+                </div>
             </div>
         );
     }

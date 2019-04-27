@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Check / Green</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons-/-Check-/-Green" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g>
+            <rect id="Bounds" x="0" y="0" width="24" height="24"></rect>
+            <path d="M9.80800832,17.4764254 L9.77700806,17.4492984 L9.74859085,17.4764254 L4.9461015,12.6736539 L6.65371076,10.9672362 L9.77700806,14.095884 L17.3462892,6.52357462 L19.052607,8.23128418 L9.80800832,17.4764254 Z M11.9987085,1 C5.92649138,1 1,5.92678062 1,12.0006458 C1,18.0745112 5.92649138,23 11.9987085,23 C18.0722171,23 23,18.0745112 23,12.0006458 C23,5.92678062 18.0722171,1 11.9987085,1 Z" id="icon" fill="#2CC874"></path>
+        </g>
+    </g>
+</svg>

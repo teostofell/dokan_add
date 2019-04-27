@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="24px" height="24px" viewBox="0 0 24 24" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>Icons / Arrows-dropdown / Normal</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Icons-/-Arrows-dropdown-/-Normal" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Icons-/-Arrow-dropdown-/-Normal">
+            <rect id="Bounds" x="0" y="0" width="24" height="24"></rect>
+            <path d="M11.999991,16.9999984 C11.8801836,17.0003305 11.7652275,16.9492125 11.6807267,16.8580299 L5.13225853,9.82757668 C5.00312772,9.68893099 4.96449798,9.48043033 5.03438009,9.29928634 C5.1042622,9.11814235 5.26889616,9.00002283 5.4515228,9 L18.5484609,9 C18.7311018,9.00003681 18.8957419,9.11817482 18.9656229,9.2993359 C19.0355039,9.48049698 18.9968669,9.68901214 18.8677252,9.82766777 L12.3192587,16.8580299 C12.2347571,16.9492134 12.1197996,17.0003314 11.999991,16.9999984 Z" id="Icon" fill="#BABDC3"></path>
+        </g>
+    </g>
+</svg>
