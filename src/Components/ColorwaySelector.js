@@ -21,7 +21,12 @@ class ColorwaySelector extends React.Component {
         }
 
         handleChange(e){
-             this.props.update('colors', e.target.value, true);
+            if(e.target.checked){
+                let color = this.props.colors.terms.filter(s => s.id == e.target.value)[0];
+                this.props.add('colors', color);
+            }
+            else
+                this.props.remove(e.target.value, 'colors');
         }
 
         render(){
@@ -31,9 +36,9 @@ class ColorwaySelector extends React.Component {
                     <p>Choose as least 2 colors of your item: </p>
                     <div className="color_list_box">
                         {
-                            colors.map(c => (
-                                <div class="color_list_item" style={{background:c.value}}>
-                                    <input type="checkbox" value={c.name} onChange={this.handleChange} name="colors_list" />
+                            this.props.colors.terms.map(c => (
+                                <div class="color_list_item" key={c.id} style={{background:c.description}}>
+                                    <input type="checkbox" value={c.id} onChange={this.handleChange} name="colors_list" />
                                     <label><i class="fas fa-check"></i></label>                        
                                 </div>
                             ))

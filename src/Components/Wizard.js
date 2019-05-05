@@ -74,13 +74,13 @@ export default class Wizard extends Component {
         this.setState({ form }, () => console.log(this.state.form));
     }
 
-    removeSize = (value) => {
+    removeAttributeCollection = (value, key) => {
         const form = {...this.state.form};
-        let collection = form['sizes'];
+        let collection = form[key];
 
         collection = collection.filter(i => i.id != value);
 
-        form['sizes'] = collection;
+        form[key] = collection;
 
         this.setState({ form }, () => console.log(this.state.form));
     }
@@ -109,7 +109,8 @@ export default class Wizard extends Component {
                     nav={<Nav />}
             >
                 <StartStep hashKey={'FirstStep'} form={this.state.form} update={this.updateForm} />
-                <BasicInfoStep hashKey={'SecondStep'} form={this.state.form} attributes={this.state.attributes} update={this.updateForm} updateSize={this.updateSize} addToCollection={this.addToCollection} removeFromCollection={this.removeSize}/>
+                <BasicInfoStep hashKey={'SecondStep'} form={this.state.form} attributes={this.state.attributes} update={this.updateForm} 
+                    updateSize={this.updateSize} addToCollection={this.addToCollection} removeFromCollection={this.removeAttributeCollection}/>
                 <ImagesStep hashKey={'ThirdStep'} form={this.state.form} update={this.updateForm} addToCollection={this.addToCollection} removeFromCollection={this.removeFromCollection}/>
                 <Last hashKey={'TheEnd!'} form={this.state.form} />
             </StepWizard>

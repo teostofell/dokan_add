@@ -99,7 +99,7 @@ class SizeSelector extends React.Component {
             this.props.add('sizes', size);
         }
         else
-            this.props.remove(e.target.value);
+            this.props.remove(e.target.value, 'sizes');
     }
 
     updateQuantity(i, val){

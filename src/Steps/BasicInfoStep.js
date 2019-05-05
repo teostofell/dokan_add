@@ -26,7 +26,7 @@ class BasicInfoStep extends React.Component {
                         <BrandSelector update={this.props.update} brands={this.props.attributes.pa_brand}/>
                         <CollaborationSelector update={this.props.update}/>
                         <ItemDetailsSelector update={this.props.update}/>
-                        <ColorwaySelector update={this.props.update} />
+                        <ColorwaySelector colors={this.props.attributes.pa_colorway} add={this.props.addToCollection} remove={this.props.removeFromCollection} />
                         <DescriptionSelector update={this.props.update} />
                         <SizeSelector sizes={this.props.form.sizes} add={this.props.addToCollection} remove={this.props.removeFromCollection} update={this.props.updateSize} />
                         <Stats step={2} {...this.props} previousStep={this.validate} />
