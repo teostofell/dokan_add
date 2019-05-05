@@ -112,7 +112,7 @@ class SizeSelector extends React.Component {
     updatePrice(i, val){
         let item = sizes.filter(s => s.id == i)[0];
 
-        this.props.update('quantity', item.id, val);
+        this.props.update('price', item.id, val);
     }
 
     render(){

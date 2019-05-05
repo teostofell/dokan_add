@@ -1,6 +1,9 @@
 import React from 'react';
 
+const steps = ['Start', 'Basic info', 'Photos', 'Finish'];
+
 const Nav = (props) => {
+    console.log(props);
     const dots = [];
     for (let i = 1; i <= props.totalSteps; i += 1) {
         const isActive = props.currentStep === i;
@@ -11,7 +14,7 @@ const Nav = (props) => {
                 onClick={() => props.goToStep(i)}>
 
                 <div className="number">{i}</div>
-                <p>Step</p>
+                <p>{steps[i - 1]}</p>
 
             </div>
         ));
