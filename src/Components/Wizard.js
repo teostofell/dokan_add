@@ -47,6 +47,21 @@ export default class Wizard extends Component {
         form[key] = value;
         this.setState({ form }, () => console.log(this.state.form));
     }
+
+    updateSize = (key, id, value) => {
+        const form = {...this.state.form};
+        let collection = form['sizes'];
+
+        for (let size of collection) {
+            if(size.id === id){
+                size[key] = value;
+            }            
+        }
+
+        form['sizes'] = collection;
+
+        this.setState({ form }, () => console.log(this.state.form));
+    }
     
     addToCollection = (key, value) => {
         const { form } = this.state;
@@ -55,6 +70,17 @@ export default class Wizard extends Component {
         collection.push(value);
         
         form[key] = collection;
+
+        this.setState({ form }, () => console.log(this.state.form));
+    }
+
+    removeSize = (value) => {
+        const form = {...this.state.form};
+        let collection = form['sizes'];
+
+        collection = collection.filter(i => i.id != value);
+
+        form['sizes'] = collection;
 
         this.setState({ form }, () => console.log(this.state.form));
     }
@@ -83,7 +109,7 @@ export default class Wizard extends Component {
                     nav={<Nav />}
             >
                 <StartStep hashKey={'FirstStep'} form={this.state.form} update={this.updateForm} />
-                <BasicInfoStep hashKey={'SecondStep'} form={this.state.form} attributes={this.state.attributes} update={this.updateForm} />
+                <BasicInfoStep hashKey={'SecondStep'} form={this.state.form} attributes={this.state.attributes} update={this.updateForm} updateSize={this.updateSize} addToCollection={this.addToCollection} removeFromCollection={this.removeSize}/>
                 <ImagesStep hashKey={'ThirdStep'} form={this.state.form} update={this.updateForm} addToCollection={this.addToCollection} removeFromCollection={this.removeFromCollection}/>
                 <Last hashKey={'TheEnd!'} form={this.state.form} />
             </StepWizard>

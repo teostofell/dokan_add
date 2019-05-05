@@ -28,7 +28,7 @@ class BasicInfoStep extends React.Component {
                         <ItemDetailsSelector update={this.props.update}/>
                         <ColorwaySelector update={this.props.update} />
                         <DescriptionSelector update={this.props.update} />
-                        <SizeSelector sizes={this.props.form.sizes} update={this.props.update} />
+                        <SizeSelector sizes={this.props.form.sizes} add={this.props.addToCollection} remove={this.props.removeFromCollection} update={this.props.updateSize} />
                         <Stats step={2} {...this.props} previousStep={this.validate} />
                     </div>
                 </div>
