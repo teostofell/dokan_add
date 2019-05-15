@@ -65,4 +65,43 @@ async function postImage(img){
     }
 }
 
-export default { getAttributes, postImage };
+async function createProduct(data){
+    try {
+        let product = {};
+
+        product.name = data.model_line;
+        product.categories = [{
+            name: 'Uncategorized'
+        }];
+        product.attributes = [];
+
+        product.attributes.push({
+            name: 'brand',
+            options: data.brand,
+        });
+
+        product.attributes.push({
+            name: 'colorway',
+            options: data.colors.map(c => c.name),
+        });
+
+        console.log(product);
+
+        const response = await fetch(`${API_PATH}/products`, {
+            method: 'POST',
+            headers: {
+                ...defaultOptions.headers,
+                'Accept': 'application/json',
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(product)
+        });
+        const json = await response.json();
+
+        return json;
+    } catch(e){
+        console.log(e);
+    }
+}
+
+export default { getAttributes, postImage, createProduct };

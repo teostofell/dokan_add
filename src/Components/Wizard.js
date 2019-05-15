@@ -134,7 +134,7 @@ class Last extends Component {
     async submit(){
         this.setState({ isLoading: true });
 
-        const result = await API.postImage(this.props.form.mainPhoto);
+        const result = await API.createProduct(this.props.form);
 
         console.log(result);
 
