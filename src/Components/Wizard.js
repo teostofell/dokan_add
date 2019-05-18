@@ -133,6 +133,7 @@ class Last extends Component {
 
     async submit(){
         this.setState({ isLoading: true });
+        
 
         const result = await API.createProduct(this.props.form);
 

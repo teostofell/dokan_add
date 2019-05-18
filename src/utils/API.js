@@ -1,9 +1,9 @@
-const API_PATH = 'http://two.sixteenpixels.ru/wp-json/dokan/v1';
-const WP_API_PATH = 'http://two.sixteenpixels.ru/wp-json/wp/v2';
+const API_PATH = 'http://prooved/wp-json/dokan/v1';
+const WP_API_PATH = 'http://prooved/wp-json/wp/v2';
 
 const defaultOptions = {
     headers: {
-      'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC90d28uc2l4dGVlbnBpeGVscy5ydSIsImlhdCI6MTU1NzA1MjI2NiwibmJmIjoxNTU3MDUyMjY2LCJleHAiOjE1NTc2NTcwNjYsImRhdGEiOnsidXNlciI6eyJpZCI6IjEifX19.T9luXE_XTGWmnmCXOWettkhh_SkMND8Qhr5FOZ9UF04',
+      'Authorization': 'Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJpc3MiOiJodHRwOlwvXC9wcm9vdmVkIiwiaWF0IjoxNTU3OTQ3ODUwLCJuYmYiOjE1NTc5NDc4NTAsImV4cCI6MTU1ODU1MjY1MCwiZGF0YSI6eyJ1c2VyIjp7ImlkIjoiMSJ9fX0.cVLeTP7fbER_Mn21Vm6row9hlGVxREK-3D7LAKt2MsQ',
     },
 };
 
@@ -29,6 +29,8 @@ async function getAttributes(){
             name: t.name,
             slug: t.slug,
             description: t.description,
+            price: 0,
+            quantity: 0,
         }));
 
         attribute.terms = terms;
@@ -57,7 +59,6 @@ async function postImage(img){
             body: img
         });
         
-        console.log("Response", response);
         const json = await response.json();
         return json;
     } catch(e) {
@@ -66,7 +67,30 @@ async function postImage(img){
 }
 
 async function createProduct(data){
+    console.log(data, "here");
+
     try {
+        let images = [];
+        // Post main image
+        if(data.mainPhoto){
+            let mainPhoto = await postImage(data.mainPhoto);
+            images.push({
+                id: mainPhoto.id,
+                position: 0,
+            });
+        }
+
+        // Post all product images
+        if(data.photos){
+            for(const photo of data.photos){
+                const p = await postImage(photo);
+                images.push({
+                    id: p.id,
+                });
+            }
+        }
+
+        // Create product
         let product = {};
 
         product.name = data.model_line;
@@ -84,6 +108,16 @@ async function createProduct(data){
             name: 'colorway',
             options: data.colors.map(c => c.name),
         });
+        product.description = data.description;
+        product.attributes.push({
+            name: 'year',
+            options: data.year,
+        });
+        product.attributes.push({
+            name: 'model-line',
+            options:  data.model_line,
+        });
+        product.images = images;
 
         console.log(product);
 
@@ -96,9 +130,11 @@ async function createProduct(data){
             },
             body: JSON.stringify(product)
         });
-        const json = await response.json();
+        product = await response.json();
 
-        return json;
+        // Create variations
+
+        return product;
     } catch(e){
         console.log(e);
     }

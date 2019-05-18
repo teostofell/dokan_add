@@ -95,7 +95,7 @@ class SizeSelector extends React.Component {
 
     handleChange(e){
         if(e.target.checked){
-            let size = sizes.filter(s => s.id == e.target.value)[0];
+            let size = this.props.terms.filter(s => s.id == e.target.value)[0];
             this.props.add('sizes', size);
         }
         else
@@ -103,14 +103,14 @@ class SizeSelector extends React.Component {
     }
 
     updateQuantity(i, val){
-        let item = sizes.filter(s => s.id == i)[0];
+        let item = this.props.terms.filter(s => s.id == i)[0];
 
         const newValue = item.quantity + val;
         this.props.update('quantity', item.id, newValue);
     }
 
     updatePrice(i, val){
-        let item = sizes.filter(s => s.id == i)[0];
+        let item = this.props.terms.filter(s => s.id == i)[0];
 
         this.props.update('price', item.id, val);
     }
@@ -123,7 +123,7 @@ class SizeSelector extends React.Component {
                     <p>Choose sizes You have for sale: <br /><span>(US sizing)</span></p>
                     <div class="choosen_list sizes_list">
                     {
-                        sizes.map((s, i) => (
+                        this.props.terms.map((s, i) => (
                             <div key={s.id} class="choosen_list_item">
                                 <input type="checkbox" name="sizes" value={s.id} onChange={this.handleChange} /><label>{s.name}</label>
                             </div>
