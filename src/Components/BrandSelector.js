@@ -36,13 +36,13 @@ class BrandSelector extends React.Component {
                             className="single_brand choosen_list_item"
                             style={{ display: (this.state.show_more || i <= 6) ? 'block' : 'none' }}
                         >
-                            <input type="radio" value={b.slug} name="brand_list" onChange={this.handleSelect} />
+                            <input type="radio" checked={b.slug == this.props.brand} value={b.slug} name="brand_list" onChange={this.handleSelect} />
                         <label>{b.name}</label></div>
                     ))
                 }
             </div>
             <div className="show_more_row">
-                <a className="show_more" onClick={this.handleClick}>Show more</a>                        
+                <a className="show_more" onClick={this.handleClick}>{ !this.state.show_more ? "Show more" : "Show less"}</a>                        
             </div>
         </div>
         );

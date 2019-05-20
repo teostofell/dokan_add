@@ -2,8 +2,6 @@ import React, { Component } from 'react';
 import StepWizard from 'react-step-wizard';
 
 import Nav from './Nav';
-import Plugs from './Plugs';
-import Stats from './Stats';
 
 import StartStep from '../Steps/StartStep';
 import BasicInfoStep from '../Steps/BasicInfoStep';
@@ -12,6 +10,7 @@ import transitions from './transitions.css';
 
 import API from '../utils/API';
 import ImagesStep from '../Steps/ImagesStep';
+import LastStep from '../Steps/LastStep';
 
 export default class Wizard extends Component {
     constructor(props) {
@@ -112,49 +111,9 @@ export default class Wizard extends Component {
                 <BasicInfoStep hashKey={'SecondStep'} form={this.state.form} attributes={this.state.attributes} update={this.updateForm} 
                     updateSize={this.updateSize} addToCollection={this.addToCollection} removeFromCollection={this.removeAttributeCollection}/>
                 <ImagesStep hashKey={'ThirdStep'} form={this.state.form} update={this.updateForm} addToCollection={this.addToCollection} removeFromCollection={this.removeFromCollection}/>
-                <Last hashKey={'TheEnd!'} form={this.state.form} />
+                <LastStep hashKey={'LastStep'} form={this.state.form} attributes={this.state.attributes} update={this.updateForm} />
             </StepWizard>
         );
     }
 }
 
-class Last extends Component {
-    constructor(props){
-        super(props);
-
-        this.state = {
-            isLoading: false,
-        }
-
-        this.submit = this.submit.bind(this);
-    }
-
-
-
-    async submit(){
-        this.setState({ isLoading: true });
-        
-
-        const result = await API.createProduct(this.props.form);
-
-        console.log(result);
-
-        this.setState({ isLoading: false });
-    }
-
-    render() {
-        if(this.state.isLoading)
-            return <h2>Loading...</h2>
-
-        return (
-            <div>
-                <div className={'text-center'}>
-                    <h3>This is the last step in this example!</h3>
-                    <hr />
-                    <Plugs />
-                </div>
-                <Stats step={4} {...this.props} nextStep={this.submit} />
-            </div>
-        );
-    }
-}

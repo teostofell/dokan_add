@@ -18,14 +18,16 @@ class BasicInfoStep extends React.Component {
         if(!this.props.attributes)
             return <h2>Loading...</h2>
 
+        let { brand, model_line, model_name, year } = this.props.form;
+
         return (
             <div className="container">
                 <div className="new_skeaker_step4 new_skeaker_step3 new_skeaker_step5">
                     <h2 className="sg_title">So, what the item is like..?</h2>
                     <div className='shipping_method'>
-                        <BrandSelector update={this.props.update} brands={this.props.attributes.pa_brand}/>
-                        <CollaborationSelector update={this.props.update}/>
-                        <ItemDetailsSelector update={this.props.update}/>
+                        <BrandSelector update={this.props.update} brand={brand} brands={this.props.attributes.pa_brand}/>
+                        {/* <CollaborationSelector update={this.props.update}/> */}
+                        <ItemDetailsSelector update={this.props.update} model_line={model_line} model_name={model_name} year={year}/>
                         <ColorwaySelector colors={this.props.attributes.pa_colorway} add={this.props.addToCollection} remove={this.props.removeFromCollection} />
                         <DescriptionSelector update={this.props.update} />
                         <SizeSelector sizes={this.props.form.sizes} terms={this.props.attributes.pa_size.terms} add={this.props.addToCollection} remove={this.props.removeFromCollection} update={this.props.updateSize} />
